@@ -12,8 +12,8 @@ export default {
   driver: process.env.MAIL_DRIVER || 'ethereal',
   dafaults: {
     from: {
-      email: 'suporte@darcasoftwares.com.br',
-      name: 'Darca Softwares',
+      email: 'enderecodeemail@dominio.com.br',
+      name: 'NomeDonoDaContaDeEmail',
     },
   },
 } as IMailConfig;
