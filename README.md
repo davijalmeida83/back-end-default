@@ -27,16 +27,19 @@ Gerenciador de pacotes:
    (docker run --name redis_container -p 6379:6379 -d -t redis:alpine)
 
 3. Instale o mondodb ou crie um container para o mesmo
-   (docker run —name mongodb_container -p 27017:27017 -d -t mongo)
+   (docker run -—name mongodb_container -p 27017:27017 -d -t mongo)
 
 4. Instale o postgres(BD de exemplo) ou crie um container para o mesmo
    (docker run --name postgres_container -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres )
 
-5. Configure os arquivos 'ormconfig.json' e '.env' para o endereço e porta do host onde se encontram os dbs
+5. Crie um banco de dados no postgres
 
 
-6. Rode as migrations para criar os schemas nos dbs ( yarn typeorm migrations:run )
+6. Configure os bancos de dados nos arquivos 'ormconfig.json' e '.env' para o endereço e porta do host onde se encontram os dbs
 
 
-7. Execute a aplicação ( yarn dev:server )
+7. Rode as migrations para criar os schemas nos dbs ( yarn typeorm migration:run )
+
+
+8. Execute a aplicação ( yarn dev:server )
 
